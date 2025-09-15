@@ -86,11 +86,11 @@
             opacity: 0.9;
         }
 
-        /* Compact Navigation Styles */
+        /* Enhanced Navigation Styles */
         nav {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            padding: 0.5rem 1rem;
+            padding: 1rem;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -100,25 +100,86 @@
         .nav-container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             max-width: 1200px;
             margin: 0 auto;
             gap: 1rem;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 0.3rem;
-            flex-wrap: wrap;
+        .hamburger-btn {
+            display: none;
+            background: linear-gradient(135deg, #1565c0, #64b5f6);
+            color: white;
+            border: none;
+            padding: 0.6rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 8px rgba(21, 101, 192, 0.3);
+            transition: all 0.3s ease;
+            z-index: 101;
+            position: relative;
+        }
+
+        .hamburger-btn:hover {
+            background: linear-gradient(135deg, #1976d2, #42a5f5);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(21, 101, 192, 0.4);
+        }
+
+        .mobile-nav-header {
+            display: none;
+            justify-content: space-between;
             align-items: center;
+            width: 100%;
+        }
+
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.5rem;
             flex: 1;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links.mobile-hidden {
+            display: none;
+        }
+
+        .nav-links.mobile-show {
+            display: grid;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 15px 15px;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+            z-index: 100;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .nav-btn {
             background: linear-gradient(135deg, #90caf9, #64b5f6);
             color: #1565c0;
             border: none;
-            padding: 0.4rem 0.8rem;
+            padding: 0.6rem 1rem;
             border-radius: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -128,6 +189,11 @@
             letter-spacing: 0.3px;
             box-shadow: 0 2px 8px rgba(144, 202, 249, 0.3);
             white-space: nowrap;
+            text-align: center;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .nav-btn:hover {
@@ -144,31 +210,39 @@
             box-shadow: 0 4px 12px rgba(21, 101, 192, 0.4);
         }
 
+        .user-section {
+            min-width: 200px;
+            flex-shrink: 0;
+        }
+
         .dropdown {
             position: relative;
         }
 
         .dropdown-toggle {
-            background: linear-gradient(135deg, #90caf9, #64b5f6);
-            color: #1565c0;
+            background: linear-gradient(135deg, #1565c0, #64b5f6);
+            color: white;
             border: none;
-            padding: 0.4rem 0.8rem;
+            padding: 0.6rem 1.2rem;
             border-radius: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 500;
             font-size: 0.85rem;
-            text-transform: capitalize;
             letter-spacing: 0.3px;
-            box-shadow: 0 2px 8px rgba(144, 202, 249, 0.3);
+            box-shadow: 0 2px 8px rgba(21, 101, 192, 0.3);
             white-space: nowrap;
+            width: 100%;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .dropdown-toggle:hover {
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(144, 202, 249, 0.4);
-            background: linear-gradient(135deg, #64b5f6, #42a5f5);
-            color: white;
+            box-shadow: 0 4px 12px rgba(21, 101, 192, 0.4);
+            background: linear-gradient(135deg, #1976d2, #42a5f5);
         }
 
         .dropdown-menu {
@@ -181,7 +255,7 @@
         }
 
         .dropdown-item {
-            padding: 0.4rem 1rem;
+            padding: 0.6rem 1.2rem;
             font-size: 0.85rem;
             color: #333;
             transition: background 0.3s;
@@ -299,10 +373,22 @@
         }
 
         /* Mobile Navigation Improvements */
+        @media (max-width: 992px) {
+            .nav-links:not(.mobile-show) {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.4rem;
+            }
+            
+            .nav-btn {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+
         @media (max-width: 768px) {
             .container {
                 margin: 8px;
-                border-radius: 15px;
+                padding: 15px;
             }
 
             h1 {
@@ -313,48 +399,55 @@
                 padding: 1.5rem 1rem;
             }
 
-            .content {
-                padding: 1rem;
-            }
-
             .nav-container {
                 flex-direction: column;
-                gap: 0.8rem;
+                align-items: stretch;
+                gap: 0;
+                position: relative;
             }
 
-            .nav-links {
-                justify-content: center;
-                gap: 0.2rem;
-                max-width: 100%;
-                overflow-x: auto;
-                padding: 0.2rem;
+            .mobile-nav-header {
+                display: flex;
+            }
+
+            .hamburger-btn {
+                display: block;
+            }
+
+            .nav-links:not(.mobile-show) {
+                display: none;
+            }
+
+            .nav-links.mobile-show {
+                display: grid;
+                margin-top: 0;
+            }
+
+            .user-section {
+                min-width: auto;
+                width: auto;
+                order: 0;
             }
 
             .nav-btn {
-                padding: 0.35rem 0.6rem;
-                font-size: 0.8rem;
-                min-width: fit-content;
-                flex-shrink: 0;
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+                min-height: 44px;
+                text-align: center;
+                justify-content: center;
             }
 
             .dropdown-toggle {
-                width: 100%;
-                text-align: left;
-            }
-
-            .logout-form {
-                margin-left: 0;
-                order: -1;
-            }
-
-            .pillar-grid {
-                grid-template-columns: 1fr;
+                padding: 0.6rem 1rem;
+                font-size: 0.8rem;
+                min-height: 44px;
             }
 
             .footer-content {
                 flex-direction: column;
                 text-align: center;
                 gap: 0.3rem;
+                align-items: center;
             }
 
             .footer-title,
@@ -364,16 +457,7 @@
         }
 
         /* Small Mobile Devices */
-        @media (max-width: 480px) {
-            .nav-links {
-                flex-wrap: wrap;
-            }
-
-            .nav-btn {
-                padding: 0.3rem 0.5rem;
-                font-size: 0.75rem;
-            }
-
+        @media (max-width: 576px) {
             h1 {
                 font-size: 1.8rem;
             }
@@ -388,28 +472,34 @@
                 bottom: 1.5rem;
                 right: 1.5rem;
             }
+
+            .container {
+                padding: 10px;
+            }
+
+            .nav-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.8rem;
+                min-height: 42px;
+            }
         }
 
-        /* Horizontal scroll for nav on very small screens */
-        @media (max-width: 320px) {
-            .nav-links {
-                flex-wrap: nowrap;
-                justify-content: flex-start;
-                padding-bottom: 0.5rem;
+        /* Very Small Mobile Devices */
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.6rem;
             }
 
-            .nav-links::-webkit-scrollbar {
-                height: 3px;
+            nav {
+                padding: 0.8rem;
             }
 
-            .nav-links::-webkit-scrollbar-track {
-                background: rgba(144, 202, 249, 0.1);
-                border-radius: 2px;
+            .nav-btn {
+                font-size: 0.75rem;
             }
 
-            .nav-links::-webkit-scrollbar-thumb {
-                background: rgba(144, 202, 249, 0.5);
-                border-radius: 2px;
+            .dropdown-toggle {
+                font-size: 0.75rem;
             }
         }
 
@@ -433,14 +523,67 @@
         .nav-btn:hover::after {
             left: 100%;
         }
+
+        /* Improved Grid Layout for Navigation */
+        @media (min-width: 1200px) {
+            .nav-links {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .nav-links {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
     </style>
 </head>
 
 <body class="bg-light">
     <nav>
-        <div class="nav-container flex-row d-flex align-items-center justify-content-between"
-            style="gap:1rem; flex-wrap:nowrap;">
-            <div class="nav-links d-flex align-items-center flex-row flex-nowrap" style="gap:0.3rem;">
+        <div class="nav-container">
+            <!-- Mobile Header with Hamburger -->
+            <div class="mobile-nav-header">
+                <div class="user-section">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-2"><i class="bi bi-person-circle"></i></span>{{ Auth::user()->name }}
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
+                            <li>
+                                <form method="POST" action="/logout" class="d-inline">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item text-danger">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="hamburger-btn" onclick="toggleMobileNav()" type="button" id="hamburgerBtn">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+            <!-- Desktop User Section -->
+            <div class="user-section d-none d-md-block">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdownDesktop"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-2"><i class="bi bi-person-circle"></i></span>{{ Auth::user()->name }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdownDesktop">
+                        <li>
+                            <form method="POST" action="/logout" class="d-inline">
+                                @csrf
+                                <button type="submit" class="dropdown-item text-danger">Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
                 <button class="nav-btn active" onclick="showSection('intro')" type="button">Introduction</button>
                 <button class="nav-btn" onclick="showSection('pillars')" type="button">6 Pillars</button>
                 <button class="nav-btn" onclick="showSection('tech')" type="button">Technology</button>
@@ -452,23 +595,6 @@
                 <button class="nav-btn" onclick="showSection('conclusion')" type="button">Conclusion</button>
                 <button class="nav-btn" onclick="showSection('references')" type="button">References</button>
                 <button class="nav-btn" onclick="showSection('quiz')" type="button">Quiz</button>
-            </div>
-            <div class="d-flex align-items-center" style="gap:0.5rem;">
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle px-3 py-2" type="button" id="userDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false"
-                        style="border-radius: 20px; font-weight: 500; background: linear-gradient(135deg, #1565c0, #64b5f6);">
-                        <span class="me-2"><i class="bi bi-person-circle"></i></span>{{ Auth::user()->name }}
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
-                        <li>
-                            <form method="POST" action="/logout" class="d-inline">
-                                @csrf
-                                <button type="submit" class="dropdown-item text-danger">Logout</button>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </nav>
@@ -488,7 +614,42 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // Mobile navigation toggle
+        function toggleMobileNav() {
+            const navLinks = document.getElementById('navLinks');
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const hamburgerIcon = hamburgerBtn.querySelector('i');
+            
+            if (navLinks.classList.contains('mobile-show')) {
+                navLinks.classList.remove('mobile-show');
+                navLinks.classList.add('mobile-hidden');
+                hamburgerIcon.className = 'bi bi-list';
+            } else {
+                navLinks.classList.remove('mobile-hidden');
+                navLinks.classList.add('mobile-show');
+                hamburgerIcon.className = 'bi bi-x-lg';
+            }
+        }
+
+        // Close mobile nav when clicking nav buttons
+        function closeMobileNavOnClick() {
+            if (window.innerWidth <= 768) {
+                const navLinks = document.getElementById('navLinks');
+                const hamburgerBtn = document.getElementById('hamburgerBtn');
+                const hamburgerIcon = hamburgerBtn.querySelector('i');
+                
+                if (navLinks.classList.contains('mobile-show')) {
+                    navLinks.classList.remove('mobile-show');
+                    navLinks.classList.add('mobile-hidden');
+                    hamburgerIcon.className = 'bi bi-list';
+                }
+            }
+        }
+
         function showSection(sectionId) {
+            // Close mobile nav first
+            closeMobileNavOnClick();
+            
             // Only run if dashboard sections exist
             if (!document.getElementById(sectionId)) return;
 
@@ -538,11 +699,52 @@
             }
         });
 
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            const navLinks = document.getElementById('navLinks');
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const hamburgerIcon = hamburgerBtn.querySelector('i');
+            
+            if (window.innerWidth > 768) {
+                // Desktop view - reset mobile nav
+                navLinks.classList.remove('mobile-show', 'mobile-hidden');
+                hamburgerIcon.className = 'bi bi-list';
+            } else {
+                // Mobile view - ensure nav is hidden initially
+                if (!navLinks.classList.contains('mobile-show')) {
+                    navLinks.classList.add('mobile-hidden');
+                }
+            }
+        });
+
+        // Close mobile nav when clicking outside
+        document.addEventListener('click', function(event) {
+            const navLinks = document.getElementById('navLinks');
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navContainer = document.querySelector('.nav-container');
+            
+            if (window.innerWidth <= 768 && 
+                navLinks.classList.contains('mobile-show') && 
+                !navContainer.contains(event.target)) {
+                
+                const hamburgerIcon = hamburgerBtn.querySelector('i');
+                navLinks.classList.remove('mobile-show');
+                navLinks.classList.add('mobile-hidden');
+                hamburgerIcon.className = 'bi bi-list';
+            }
+        });
+
         // Add smooth scrolling behavior for better UX
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize scroll button visibility
             const scrollBtn = document.querySelector('.scroll-top');
             scrollBtn.style.display = 'none';
+            
+            // Initialize mobile nav state
+            const navLinks = document.getElementById('navLinks');
+            if (window.innerWidth <= 768) {
+                navLinks.classList.add('mobile-hidden');
+            }
         });
     </script>
 </body>
