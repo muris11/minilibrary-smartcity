@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name', 'Mini Library') }}</title>
+    <title>Mini Library Smart City</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/lg.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Custom CSS should be loaded after Bootstrap for override -->
@@ -106,6 +107,24 @@
             gap: 1rem;
         }
 
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar-logo img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+        }
+
+        .navbar-logo span {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1565c0;
+        }
+
         .hamburger-btn {
             display: none;
             background: linear-gradient(135deg, #1565c0, #64b5f6);
@@ -141,6 +160,7 @@
             flex: 1;
             width: 100%;
             transition: all 0.3s ease;
+            justify-content: center;
         }
 
         .nav-links.mobile-hidden {
@@ -169,6 +189,7 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -378,7 +399,7 @@
                 grid-template-columns: repeat(3, 1fr);
                 gap: 0.4rem;
             }
-            
+
             .nav-btn {
                 padding: 0.5rem 0.8rem;
                 font-size: 0.8rem;
@@ -540,8 +561,17 @@
 </head>
 
 <body class="bg-light">
+
     <nav>
-        <div class="nav-container">
+        <div class="nav-container" style="align-items:center;display:flex;justify-content:space-between;">
+            <div class="nav-links" id="navLinks" style="flex:1;justify-content:center;">
+                <button class="nav-btn active" onclick="showSection('intro')" type="button">Introduction</button>
+                <button class="nav-btn" onclick="showSection('pillars')" type="button">6 Pillars</button>
+                <button class="nav-btn" onclick="showSection('technologies')" type="button">Technology</button>
+                <button class="nav-btn" onclick="showSection('benefits')" type="button">Benefits</button>
+                <button class="nav-btn" onclick="showSection('challenges')" type="button">Lampung City</button>
+                <button class="nav-btn" onclick="showSection('quiz')" type="button">Quiz</button>
+            </div>
             <!-- Mobile Header with Hamburger -->
             <div class="mobile-nav-header">
                 <div class="user-section">
@@ -564,9 +594,8 @@
                     <i class="bi bi-list"></i>
                 </button>
             </div>
-
             <!-- Desktop User Section -->
-            <div class="user-section d-none d-md-block">
+            <div class="user-section d-none d-md-block" style="margin-left:auto;">
                 <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdownDesktop"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -582,20 +611,7 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="nav-links" id="navLinks">
-                <button class="nav-btn active" onclick="showSection('intro')" type="button">Introduction</button>
-                <button class="nav-btn" onclick="showSection('pillars')" type="button">6 Pillars</button>
-                <button class="nav-btn" onclick="showSection('tech')" type="button">Technology</button>
-                <button class="nav-btn" onclick="showSection('benefits')" type="button">Benefits</button>
-                <button class="nav-btn" onclick="showSection('challenges')" type="button">Challenges</button>
-                <button class="nav-btn" onclick="showSection('stories')" type="button">Case Studies</button>
-                <button class="nav-btn" onclick="showSection('indonesia')" type="button">Indonesia</button>
-                <button class="nav-btn" onclick="showSection('future')" type="button">Future</button>
-                <button class="nav-btn" onclick="showSection('conclusion')" type="button">Conclusion</button>
-                <button class="nav-btn" onclick="showSection('references')" type="button">References</button>
-                <button class="nav-btn" onclick="showSection('quiz')" type="button">Quiz</button>
-            </div>
+
         </div>
     </nav>
 
@@ -605,7 +621,7 @@
 
     <footer class="footer-modern">
         <div class="footer-content">
-            <div class="footer-title">Mini Library Smart City Lampung</div>
+            <div class="footer-title">Mini Library Smart City</div>
             <div class="footer-copyright">&copy; {{ date('Y') }} All rights reserved</div>
         </div>
     </footer>
@@ -619,7 +635,7 @@
             const navLinks = document.getElementById('navLinks');
             const hamburgerBtn = document.getElementById('hamburgerBtn');
             const hamburgerIcon = hamburgerBtn.querySelector('i');
-            
+
             if (navLinks.classList.contains('mobile-show')) {
                 navLinks.classList.remove('mobile-show');
                 navLinks.classList.add('mobile-hidden');
@@ -637,7 +653,7 @@
                 const navLinks = document.getElementById('navLinks');
                 const hamburgerBtn = document.getElementById('hamburgerBtn');
                 const hamburgerIcon = hamburgerBtn.querySelector('i');
-                
+
                 if (navLinks.classList.contains('mobile-show')) {
                     navLinks.classList.remove('mobile-show');
                     navLinks.classList.add('mobile-hidden');
@@ -649,7 +665,7 @@
         function showSection(sectionId) {
             // Close mobile nav first
             closeMobileNavOnClick();
-            
+
             // Only run if dashboard sections exist
             if (!document.getElementById(sectionId)) return;
 
@@ -704,7 +720,7 @@
             const navLinks = document.getElementById('navLinks');
             const hamburgerBtn = document.getElementById('hamburgerBtn');
             const hamburgerIcon = hamburgerBtn.querySelector('i');
-            
+
             if (window.innerWidth > 768) {
                 // Desktop view - reset mobile nav
                 navLinks.classList.remove('mobile-show', 'mobile-hidden');
@@ -722,11 +738,11 @@
             const navLinks = document.getElementById('navLinks');
             const hamburgerBtn = document.getElementById('hamburgerBtn');
             const navContainer = document.querySelector('.nav-container');
-            
-            if (window.innerWidth <= 768 && 
-                navLinks.classList.contains('mobile-show') && 
+
+            if (window.innerWidth <= 768 &&
+                navLinks.classList.contains('mobile-show') &&
                 !navContainer.contains(event.target)) {
-                
+
                 const hamburgerIcon = hamburgerBtn.querySelector('i');
                 navLinks.classList.remove('mobile-show');
                 navLinks.classList.add('mobile-hidden');
@@ -739,7 +755,7 @@
             // Initialize scroll button visibility
             const scrollBtn = document.querySelector('.scroll-top');
             scrollBtn.style.display = 'none';
-            
+
             // Initialize mobile nav state
             const navLinks = document.getElementById('navLinks');
             if (window.innerWidth <= 768) {
