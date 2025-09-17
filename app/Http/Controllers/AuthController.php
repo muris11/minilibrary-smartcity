@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
 
 class AuthController extends Controller
 {
@@ -49,5 +50,23 @@ class AuthController extends Controller
     {
     Auth::logout();
     return redirect('/login');
+    }
+
+    public function showForgotForm()
+    {
+        return view('auth.forgot');
+    }
+
+    public function sendForgot(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email|exists:users,email',
+            'password' => 'required|min:6',
+            'password_confirmation' => 'required|same:password'
+        ]);
+        $user = User::where('email', $request->email)->first();
+        $user->password = Hash::make($request->password);
+        $user->save();
+        return redirect('/login')->with('success', 'Password berhasil diubah, silakan login.');
     }
 }

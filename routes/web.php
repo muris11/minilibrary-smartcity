@@ -12,4 +12,6 @@ Route::get('/', function () {
     return view('dashboard');
 })->middleware('auth');
 
-// Removed the /quiz route as quiz is only accessible as a dashboard section now.
+// Updated routes for password reset functionality
+Route::get('/forgot', [App\Http\Controllers\AuthController::class, 'showForgotForm'])->name('password.request');
+Route::post('/forgot', [App\Http\Controllers\AuthController::class, 'sendForgot'])->name('password.update');

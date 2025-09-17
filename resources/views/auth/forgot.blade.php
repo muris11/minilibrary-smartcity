@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Mini Library Smart City</title>
+    <title>Forgot Password - Mini Library Smart City</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/lg.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
         body {
             min-height: 100vh;
@@ -181,10 +180,10 @@
                 <h1>🏙️ Smart City Library</h1>
                 <div class="subtitle">Interactive Learning Platform</div>
             </div>
-            <div class="login-title">Login Mini Library</div>
-            @if (session('error'))
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    {{ session('error') }}
+            <div class="login-title">Change Password</div>
+            @if (session('status'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('status') }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             @endif
@@ -198,17 +197,18 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             @endif
-            <form method="POST" action="/login" class="custom-login-form">
+            <form method="POST" action="/forgot" class="custom-login-form">
                 @csrf
-                <input type="email" name="email" class="custom-input" placeholder="Email" required autofocus>
-                <input type="password" name="password" class="custom-input" placeholder="Password" required>
-                <button type="submit" class="custom-btn">Login</button>
+                <input type="email" name="email" id="forgotEmail" class="custom-input" placeholder="Email" required
+                    autofocus>
+                <input type="password" name="password" id="forgotPassword" class="custom-input"
+                    placeholder="New Password" required>
+                <input type="password" name="password_confirmation" id="forgotPasswordConfirm" class="custom-input"
+                    placeholder="Confirm New Password" required>
+                <button type="submit" class="custom-btn">Change Password</button>
             </form>
             <div class="mt-3 text-center">
-                <a href="/register" class="custom-link">Don't have an account? Register here</a>
-            </div>
-            <div class="mt-3 text-center">
-                <a href="/forgot" class="custom-link">Forgot Password?</a>
+                <a href="/login" class="custom-link">Back to Login</a>
             </div>
         </div>
     </div>

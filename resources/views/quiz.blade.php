@@ -105,7 +105,7 @@
             color: #1565c0;
         }
     </style>
-    <h1 style="text-align:center; font-weight:bold;">Six Pillars of Smart City</h1>
+    <h1 style="text-align:center; font-weight:bold;">Quiz Smart City</h1>
     <p style="text-align: center">Challenge yourself with these 10 advanced Smart City questions:</p>
     <form id="quiz2-form">
         <div>
