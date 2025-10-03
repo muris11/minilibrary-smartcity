@@ -48,7 +48,15 @@
         of urban environments (Cisco, 2023).</p>
     <h1 style="text-align:center; font-weight:bold; ">Video About Smart City</h1>
     <div style="text-align:center; margin: 1.5rem 0;">
-        <iframe width="900" height="506" src="https://www.youtube.com/embed/U8cCbWwx3s4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.10);"></iframe>
+        <div style="position:relative; width:100%; padding-bottom:56.25%; max-width:900px; margin:0 auto; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.10); overflow:hidden;">
+            <iframe src="https://www.youtube.com/embed/U8cCbWwx3s4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:16px;">
+            </iframe>
+        </div>
     </div>
     <!-- Custom Table Styles -->
     <style>

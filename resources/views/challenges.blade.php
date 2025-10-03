@@ -187,11 +187,16 @@
     </ul>
     <h1 style="text-align:center; font-weight:bold; ">Video Lampung City</h1>
     <div style="text-align:center; margin: 1.5rem 0;">
-        <video controls
-            style="width: 90vw; max-width: 1200px; height: auto; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.10);">
-            <source src="{{ asset('images/lampung.mp4') }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div style="position:relative; width:90%; max-width:1200px; margin:0 auto; padding-bottom:56.25%; height:0; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.10); overflow:hidden;">
+            <iframe 
+                src="https://www.youtube.com/embed/Iy6G14K7uaY"
+                title="Video Lampung City"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:16px;">
+            </iframe>
+        </div>
     </div>
 
     <!-- References Table -->
