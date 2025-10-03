@@ -568,8 +568,8 @@
                 <button class="nav-btn active" onclick="showSection('intro')" type="button">Introduction</button>
                 <button class="nav-btn" onclick="showSection('pillars')" type="button">6 Pillars</button>
                 <button class="nav-btn" onclick="showSection('technologies')" type="button">Technology</button>
-                <button class="nav-btn" onclick="showSection('benefits')" type="button">Benefits</button>
                 <button class="nav-btn" onclick="showSection('challenges')" type="button">Lampung City</button>
+                                <button class="nav-btn" onclick="showSection('benefits')" type="button">Benefits</button>
                 <button class="nav-btn" onclick="showSection('quiz')" type="button">Quiz</button>
             </div>
             <!-- Mobile Header with Hamburger -->

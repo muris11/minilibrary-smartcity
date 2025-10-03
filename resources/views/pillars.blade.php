@@ -89,8 +89,8 @@
             initiatives.</p>
 
         <h3>Smart Economy</h3>
-        <img src="{{ asset('images/eco.png') }}"
-            alt="Smart Economy" style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
+        <img src="{{ asset('images/eco.png') }}" alt="Smart Economy"
+            style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
         <p>This pillar focuses on economic vitality through innovation and competitiveness. A Smart Economy uses
             information
             and communication technologies (ICT) to strengthen local businesses, attract investment and talent, and
@@ -124,8 +124,8 @@
         </p>
 
         <h3>Smart People</h3>
-        <img src="{{ asset('images/peo.png') }}"
-            alt="Smart People" style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
+        <img src="{{ asset('images/peo.png') }}" alt="Smart People"
+            style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
         <p>The Smart People pillar refers to the social and human capital of the city – namely, the education, skills,
             creativity and civic engagement of its residents. A smart city invests in its citizens’ abilities and
             inclusiveness.<br>
@@ -154,8 +154,8 @@
         </p>
 
         <h3>Smart Governance</h3>
-        <img src="{{ asset('images/gov.png') }}"
-            alt="Smart Governance" style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
+        <img src="{{ asset('images/gov.png') }}" alt="Smart Governance"
+            style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
         <p>This pillar covers the use of ICT by public institutions to enhance transparency, efficiency and citizen
             engagement. Smart Governance means that government and its stakeholders collaborate through digital
             platforms
@@ -191,8 +191,8 @@
         </p>
 
         <h3>Smart Mobility</h3>
-        <img src="{{ asset('images/mob.png') }}"
-            alt="Smart Mobility" style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
+        <img src="{{ asset('images/mob.png') }}" alt="Smart Mobility"
+            style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
         <p>This pillar addresses the design of efficient, inclusive and sustainable transportation systems. Smart
             Mobility
             uses technology to optimize how people and goods move in the city.<br>
@@ -222,8 +222,8 @@
         </p>
 
         <h3>Smart Environment</h3>
-        <img src="{{ asset('images/env.png') }}"
-            alt="Smart Environment" style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
+        <img src="{{ asset('images/env.png') }}" alt="Smart Environment"
+            style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
         <p>This pillar deals with environmental sustainability and resource management. A Smart Environment uses
             sensors,
             data and green technologies to improve urban ecosystems.<br>
@@ -257,8 +257,8 @@
         </p>
 
         <h3>Smart Living</h3>
-        <img src="{{ asset('images/liv.png') }}"
-            alt="Smart Living" style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
+        <img src="{{ asset('images/liv.png') }}" alt="Smart Living"
+            style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
         <p>The final pillar, Smart Living, covers the overall quality of life and well-being of residents. It includes
             healthcare, education, housing, safety and culture.<br>
             <em>Source: beesmart.city</em>
@@ -303,37 +303,41 @@
             <thead>
                 <tr>
                     <th style="width:5%;">No</th>
-                    <th style="width:65%;">Title</th>
+                    <th style="width:65%;"><b>Title & Source</b></th>
                     <th style="width:30%;">Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>SMART CITIES RANKING: AN EFFECTIVE INSTRUMENT FOR THE POSITIONING OF CITIES?</td>
+                    <td><b>ResearchGate.</b> SMART CITIES RANKING: AN EFFECTIVE INSTRUMENT FOR THE POSITIONING OF
+                        CITIES?</td>
                     <td><a href="https://www.researchgate.net/publication/228915976_Smart_cities_ranking_An_effective_instrument_for_the_positioning_of_the_cities#:~:text=factors%20of%20a%20smart%20city,2010"
                             class="custom-btn">View Details</a></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>SMART CITY INDICATORS</td>
+                    <td><b>BeeSmart.City.</b> SMART CITY INDICATORS</td>
                     <td><a href="https://www.beesmart.city/en/smart-city-indicators#:~:text=%E2%80%9CSmart%20People%E2%80%9D%20solutions%20support%20the,nurtured%20by%20implementing%20intelligent%20solutions"
                             class="custom-btn">View Details</a></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Discovering The Six Pillars of Indonesia’s Smart Cities</td>
-                    <td><a href="https://ycp.com/insights/article/discovering-the-six-pillars-of-indonesias-smart-cities#:~:text=Smart%20Infrastructure%20%26%20Mobility" class="custom-btn">View Details</a></td>
+                    <td><b>YCP.</b> Discovering The Six Pillars of Indonesia’s Smart Cities</td>
+                    <td><a href="https://ycp.com/insights/article/discovering-the-six-pillars-of-indonesias-smart-cities#:~:text=Smart%20Infrastructure%20%26%20Mobility"
+                            class="custom-btn">View Details</a></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>5 reasons why Barcelona is one of the world’s leading smart cities</td>
-                    <td><a href="https://catalonia.com/w/5-reasons-why-barcelona-is-one-of-the-world-s-leading-smart-cities#:~:text=Additionally%2C%20Barcelona%20has%20recently%20implemented,more%20leisure%20and%20green%20spaces" class="custom-btn">View Details</a></td>
+                    <td><b>Catalonia.com.</b> 5 reasons why Barcelona is one of the world’s leading smart cities</td>
+                    <td><a href="https://catalonia.com/w/5-reasons-why-barcelona-is-one-of-the-world-s-leading-smart-cities#:~:text=Additionally%2C%20Barcelona%20has%20recently%20implemented,more%20leisure%20and%20green%20spaces"
+                            class="custom-btn">View Details</a></td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>3 reasons why Singapore is the smartest city in the world</td>
-                    <td><a href="https://www.weforum.org/stories/2019/11/singapore-smart-city/#:~:text=In%20Singapore%2C%20a%20key%20example,inherently%20be%20a%20healthier%20one" class="custom-btn">View Details</a></td>
+                    <td><b>World Economic Forum.</b> 3 reasons why Singapore is the smartest city in the world</td>
+                    <td><a href="https://www.weforum.org/stories/2019/11/singapore-smart-city/#:~:text=In%20Singapore%2C%20a%20key%20example,inherently%20be%20a%20healthier%20one"
+                            class="custom-btn">View Details</a></td>
                 </tr>
             </tbody>
         </table>

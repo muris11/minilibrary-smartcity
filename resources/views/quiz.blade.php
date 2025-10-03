@@ -105,79 +105,91 @@
             color: #1565c0;
         }
     </style>
+
     <h1 style="text-align:center; font-weight:bold;">Quiz Smart City</h1>
-    <p style="text-align: center">Challenge yourself with these 10 advanced Smart City questions:</p>
+    <p style="text-align: center">Challenge yourself with these 10 advanced Smart City questions (based on the Planning Malaysia 2022 study of Lyon & Bandar Lampung):</p>
+
     <form id="quiz2-form">
         <div>
-            <label>1. Which technology is essential for autonomous vehicles in Smart Cities?</label><br>
-            <input type="radio" name="q1_2" value="a"> Blockchain<br>
-            <input type="radio" name="q1_2" value="b"> 5G Network<br>
-            <input type="radio" name="q1_2" value="c"> GIS<br>
-            <input type="radio" name="q1_2" value="d"> E-Government<br>
+            <label>1. What best describes the study’s research design in comparing Lyon and Bandar Lampung?</label><br>
+            <input type="radio" name="q1_2" value="a"> Randomized controlled trial across multiple cities<br>
+            <input type="radio" name="q1_2" value="b"> Qualitative comparative case study of two cities<br>
+            <input type="radio" name="q1_2" value="c"> Cross-sectional econometric analysis using panel data<br>
+            <input type="radio" name="q1_2" value="d"> Laboratory experiment on simulated urban networks<br>
         </div>
+
         <div>
-            <label>2. What does IoT stand for?</label><br>
-            <input type="radio" name="q2_2" value="a"> Internet of Things<br>
-            <input type="radio" name="q2_2" value="b"> Information of Technology<br>
-            <input type="radio" name="q2_2" value="c"> Integrated Online Tools<br>
-            <input type="radio" name="q2_2" value="d"> Intelligent Operations Team<br>
+            <label>2. Which primary instruments were used to collect data for the environment-related indicators?</label><br>
+            <input type="radio" name="q2_2" value="a"> Interviews with officials and a five-point Likert survey<br>
+            <input type="radio" name="q2_2" value="b"> Satellite imagery and mobile phone CDRs only<br>
+            <input type="radio" name="q2_2" value="c"> Randomized citizen trials with IoT kits<br>
+            <input type="radio" name="q2_2" value="d"> Fiscal audits of municipal procurement<br>
         </div>
+
         <div>
-            <label>3. Which pillar is most related to citizen participation?</label><br>
-            <input type="radio" name="q3_2" value="a"> Smart Mobility<br>
-            <input type="radio" name="q3_2" value="b"> Smart People<br>
-            <input type="radio" name="q3_2" value="c"> Smart Economy<br>
-            <input type="radio" name="q3_2" value="d"> Smart Environment<br>
+            <label>3. What is the focal domain assessed in the study’s comparison of the two cities?</label><br>
+            <input type="radio" name="q3_2" value="a"> Smart Economy (innovation & jobs)<br>
+            <input type="radio" name="q3_2" value="b"> Environment-related domain (e.g., buildings, housing, pollution, water, waste)<br>
+            <input type="radio" name="q3_2" value="c"> Smart Governance (e-government & open data)<br>
+            <input type="radio" name="q3_2" value="d"> Smart Mobility (autonomous & EV systems)<br>
         </div>
+
         <div>
-            <label>4. What is a benefit of using Big Data in Smart Cities?</label><br>
-            <input type="radio" name="q4_2" value="a"> Faster internet<br>
-            <input type="radio" name="q4_2" value="b"> Data-driven decision making<br>
-            <input type="radio" name="q4_2" value="c"> More pollution<br>
-            <input type="radio" name="q4_2" value="d"> Higher taxes<br>
+            <label>4. Which of the following is included as an environment-related subdomain in the study?</label><br>
+            <input type="radio" name="q4_2" value="a"> FinTech services for SMEs<br>
+            <input type="radio" name="q4_2" value="b"> Waste management (e.g., smart containers, routing)<br>
+            <input type="radio" name="q4_2" value="c"> E-commerce logistics optimization<br>
+            <input type="radio" name="q4_2" value="d"> Digital identity for citizen authentication<br>
         </div>
+
         <div>
-            <label>5. Which system helps monitor air quality in real time?</label><br>
-            <input type="radio" name="q5_2" value="a"> Smart Grid<br>
-            <input type="radio" name="q5_2" value="b"> Air Quality Monitoring System<br>
-            <input type="radio" name="q5_2" value="c"> Blockchain<br>
-            <input type="radio" name="q5_2" value="d"> E-Commerce Platform<br>
+            <label>5. Which technologies are cited for pollution control within the environment-related domain?</label><br>
+            <input type="radio" name="q5_2" value="a"> Paper-based reporting and manual patrols<br>
+            <input type="radio" name="q5_2" value="b"> Video-analytics for traffic emissions and sensors for air/humidity<br>
+            <input type="radio" name="q5_2" value="c"> Blockchain ledgers for waste tokenization<br>
+            <input type="radio" name="q5_2" value="d"> Drone-only surveillance without fixed sensors<br>
         </div>
+
         <div>
-            <label>6. What is the main purpose of Smart Waste Management?</label><br>
-            <input type="radio" name="q6_2" value="a"> Increase landfill size<br>
-            <input type="radio" name="q6_2" value="b"> Optimize waste collection and recycling<br>
-            <input type="radio" name="q6_2" value="c"> Sell waste online<br>
-            <input type="radio" name="q6_2" value="d"> Reduce citizen participation<br>
+            <label>6. Which gap was highlighted for Bandar Lampung’s building domain?</label><br>
+            <input type="radio" name="q6_2" value="a"> Over-adoption of zero-energy building concepts citywide<br>
+            <input type="radio" name="q6_2" value="b"> Limited mainstream adoption of zero-energy building (ZEB) concepts<br>
+            <input type="radio" name="q6_2" value="c"> Lack of any sustainable principles in construction<br>
+            <input type="radio" name="q6_2" value="d"> No organized building network considerations<br>
         </div>
+
         <div>
-            <label>7. Which technology enables remote healthcare in Smart Cities?</label><br>
-            <input type="radio" name="q7_2" value="a"> Telemedicine<br>
-            <input type="radio" name="q7_2" value="b"> Smart Grid<br>
-            <input type="radio" name="q7_2" value="c"> Blockchain<br>
-            <input type="radio" name="q7_2" value="d"> GIS<br>
+            <label>7. In the housing subdomain, which aspect remains under-implemented in Bandar Lampung?</label><br>
+            <input type="radio" name="q7_2" value="a"> Disability-accessible features in community housing<br>
+            <input type="radio" name="q7_2" value="b"> Use of green plants as an amenity<br>
+            <input type="radio" name="q7_2" value="c"> Creation of pleasant home environments<br>
+            <input type="radio" name="q7_2" value="d"> Household use of renewables (at least in part)<br>
         </div>
+
         <div>
-            <label>8. What is a challenge for Smart City implementation?</label><br>
-            <input type="radio" name="q8_2" value="a"> Digital divide<br>
-            <input type="radio" name="q8_2" value="b"> Unlimited budget<br>
-            <input type="radio" name="q8_2" value="c"> No need for data security<br>
-            <input type="radio" name="q8_2" value="d"> No need for collaboration<br>
+            <label>8. Which challenge in pollution control does the study suggest needs strengthening in Bandar Lampung?</label><br>
+            <input type="radio" name="q8_2" value="a"> Community-led operation and data stewardship for air-quality tech<br>
+            <input type="radio" name="q8_2" value="b"> Absolute absence of regulations<br>
+            <input type="radio" name="q8_2" value="c"> Over-saturation of integrated systems<br>
+            <input type="radio" name="q8_2" value="d"> Total lack of monitoring attempts<br>
         </div>
+
         <div>
-            <label>9. Which platform is used for participatory planning in Surabaya?</label><br>
-            <input type="radio" name="q9_2" value="a"> E-Musrenbang<br>
-            <input type="radio" name="q9_2" value="b"> Qlue<br>
-            <input type="radio" name="q9_2" value="c"> LAPOR<br>
-            <input type="radio" name="q9_2" value="d"> OK-OTrip<br>
+            <label>9. Which comparative statement reflects the study’s findings about Lyon and Bandar Lampung?</label><br>
+            <input type="radio" name="q9_2" value="a"> Lyon is more advanced with strong private-sector involvement; Bandar Lampung is preparing foundations<br>
+            <input type="radio" name="q9_2" value="b"> Bandar Lampung is fully advanced; Lyon is in a preparatory stage<br>
+            <input type="radio" name="q9_2" value="c"> Both cities are at identical maturity levels across all subdomains<br>
+            <input type="radio" name="q9_2" value="d"> Neither city adopted any smart technologies in the environment domain<br>
         </div>
+
         <div>
-            <label>10. What is the main goal of Smart Living?</label><br>
-            <input type="radio" name="q10_2" value="a"> Increase bureaucracy<br>
-            <input type="radio" name="q10_2" value="b"> Improve quality of life<br>
-            <input type="radio" name="q10_2" value="c"> Reduce citizen engagement<br>
-            <input type="radio" name="q10_2" value="d"> Increase pollution<br>
+            <label>10. Which methodological practices were used to ensure data quality and clarity?</label><br>
+            <input type="radio" name="q10_2" value="a"> Ignoring respondents’ feedback during data collection<br>
+            <input type="radio" name="q10_2" value="b"> Pilot-testing the questionnaire and triangulating by reporting back to informants<br>
+            <input type="radio" name="q10_2" value="c"> Relying solely on social media scraping<br>
+            <input type="radio" name="q10_2" value="d"> Using only financial records to infer perceptions<br>
         </div>
+
         <button type="button" id="submit-btn-2" onclick="submitQuiz2()">Submit Quiz</button>
         <button type="button" id="reset-btn-2" class="btn btn-outline-danger rounded-pill px-4 py-2"
             style="font-weight:600; font-size:1.05rem; margin-top:1rem; display:block;" onclick="resetQuiz2()">Reset
@@ -187,7 +199,9 @@
             onclick="downloadCertificate()" disabled>Download
             Certificate (PDF)</button>
     </form>
+
     <div id="quiz2-result" style="margin-top:1rem;"></div>
+
     <!-- Quiz2 Feedback Modal -->
     <div class="modal fade" id="quiz2FeedbackModal" tabindex="-1" aria-labelledby="quiz2FeedbackLabel"
         aria-hidden="true">
@@ -206,6 +220,7 @@
             </div>
         </div>
     </div>
+
     <!-- Modal for incomplete answers -->
     <div class="modal fade" id="quiz2IncompleteModal" tabindex="-1" aria-labelledby="quiz2IncompleteLabel"
         aria-hidden="true">
@@ -224,6 +239,8 @@
             </div>
         </div>
     </div>
+
+    <!-- IMPORTANT: the answer key below is UNCHANGED (logic preserved). The rewritten questions map to the same keys. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script>
         function allAnswered2() {
@@ -307,9 +324,7 @@
                 return;
             }
 
-            const {
-                jsPDF
-            } = window.jspdf;
+            const { jsPDF } = window.jspdf;
             const doc = new jsPDF({
                 orientation: 'landscape',
                 unit: 'mm',
@@ -338,52 +353,40 @@
             var logoImg = new Image();
             logoImg.src = window.location.origin + '/images/lg.png';
             doc.addImage(logoImg, 'PNG', 25, 25, 40, 40);
-            
+
             // Certificate title with proper hierarchy
             doc.setFont('helvetica', 'bold');
             doc.setTextColor(255, 255, 255);
             doc.setFontSize(24);
-            doc.text('CERTIFICATE OF COMPLETION', 148, 42, {
-                align: 'center'
-            });
+            doc.text('CERTIFICATE OF COMPLETION', 148, 42, { align: 'center' });
 
             doc.setFontSize(14);
             doc.setTextColor(240, 240, 240);
-            doc.text('Smart City Advanced Quiz', 148, 52, {
-                align: 'center'
-            });
+            doc.text('Smart City Advanced Quiz', 148, 52, { align: 'center' });
 
             // Main content area with better spacing
             doc.setTextColor(60, 60, 60);
             doc.setFont('helvetica', 'normal');
             doc.setFontSize(16);
-            doc.text('This is to certify that', 148, 85, {
-                align: 'center'
-            });
+            doc.text('This is to certify that', 148, 85, { align: 'center' });
 
             // Participant name placeholder (could be dynamic)
             doc.setFont('helvetica', 'bold');
             doc.setFontSize(20);
             doc.setTextColor(25, 118, 210);
-            doc.text('Quiz Participant', 148, 100, {
-                align: 'center'
-            });
+            doc.text('Quiz Participant', 148, 100, { align: 'center' });
 
             // Achievement line
             doc.setFont('helvetica', 'normal');
             doc.setFontSize(14);
             doc.setTextColor(80, 80, 80);
-            doc.text('has successfully completed the Smart City Advanced Quiz', 148, 115, {
-                align: 'center'
-            });
+            doc.text('has successfully completed the Smart City Advanced Quiz', 148, 115, { align: 'center' });
 
             // Score display with emphasis
             doc.setFont('helvetica', 'bold');
             doc.setFontSize(18);
             doc.setTextColor(248, 181, 0);
-            doc.text('Achievement: ' + score, 148, 135, {
-                align: 'center'
-            });
+            doc.text('Achievement: ' + score, 148, 135, { align: 'center' });
 
             // Completion date
             doc.setFont('helvetica', 'normal');
@@ -394,17 +397,13 @@
                 month: 'long',
                 day: 'numeric'
             });
-            doc.text('Completed on: ' + currentDate, 148, 150, {
-                align: 'center'
-            });
+            doc.text('Completed on: ' + currentDate, 148, 150, { align: 'center' });
 
             // Motivational message
             doc.setFont('helvetica', 'italic');
             doc.setFontSize(11);
             doc.setTextColor(25, 118, 210);
-            doc.text('Continue your journey in Smart City innovation and technology!', 148, 165, {
-                align: 'center'
-            });
+            doc.text('Continue your journey in Smart City innovation and technology!', 148, 165, { align: 'center' });
 
             // Footer section with organization info
             doc.setFillColor(248, 181, 0);
@@ -413,9 +412,7 @@
             doc.setFont('helvetica', 'bold');
             doc.setFontSize(12);
             doc.setTextColor(255, 255, 255);
-            doc.text('Mini Library Smart City', 148, 185, {
-                align: 'center'
-            });
+            doc.text('Mini Library Smart City', 148, 185, { align: 'center' });
 
             // Decorative elements for visual appeal
             // Left decorative element

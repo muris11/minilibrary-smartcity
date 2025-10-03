@@ -24,8 +24,8 @@
         transportation, energy, water supply, and waste management while providing citizens with platforms to engage in
         governance and access public services efficiently (European Commission, 2023).</p>
     <div style="text-align:center; margin: 1.5rem 0;">
-        <img src="{{ asset('images/bg2.png') }}"
-            alt="Smart City" style="max-width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.10);">
+        <img src="{{ asset('images/bg2.png') }}" alt="Smart City"
+            style="max-width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.10);">
     </div>
     <p>In a smart city, IoT devices, sensors, and real-time data analytics are widely used to monitor and manage
         infrastructure. These technologies enable city administrators to make proactive decisions, reduce congestion,
@@ -46,16 +46,23 @@
         traffic, utilities, and public safety, providing adaptive solutions to urban challenges. By fostering
         sustainable growth, efficiency, and inclusivity, smart cities aim to improve both the livability and resilience
         of urban environments (Cisco, 2023).</p>
-
+    <h1 style="text-align:center; font-weight:bold; ">Video About Smart City</h1>
+    <div style="text-align:center; margin: 1.5rem 0;">
+        <video controls style="max-width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.10);">
+            <source src="{{ asset('images/smart_city.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <!-- Custom Table Styles -->
     <style>
         h1 {
-        font-size: 2.2rem;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 1.2rem;
-        color: #1565c0;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            color: #1565c0;
         }
+
         .custom-table {
             width: 100%;
             border-collapse: separate;
@@ -120,37 +127,40 @@
             <thead>
                 <tr>
                     <th style="width:5%;">No</th>
-                    <th style="width:65%;">Title</th>
+                    <th style="width:65%;">Title & <b>Source</b></th>
                     <th style="width:30%;">Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>European Commission. Smart Cities: City Initiatives. 2023</td>
+                    <td><b>European Commission.</b> Smart Cities: City Initiatives. 2023</td>
                     <td><a href="https://commission.europa.eu/eu-regional-and-urban-development/topics/cities-and-urban-development/city-initiatives/smart-cities_en?utm_source=chatgpt.com"
                             class="custom-btn">View Details</a></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>IBM. What is a Smart City? 2023.</td>
+                    <td><b>IBM.</b> What is a Smart City? 2023.</td>
                     <td><a href="https://www.ibm.com/think/topics/smart-city?utm_source=chatgpt.com"
                             class="custom-btn">View Details</a></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>TechTarget. Smart City Definition. 2023</td>
-                    <td><a href="https://www.techtarget.com/iotagenda/definition/smart-city?utm_source=chatgpt.com" class="custom-btn">View Details</a></td>
+                    <td><b>TechTarget.</b> Smart City Definition. 2023</td>
+                    <td><a href="https://www.techtarget.com/iotagenda/definition/smart-city?utm_source=chatgpt.com"
+                            class="custom-btn">View Details</a></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Plant Moran. 10 Benefits of Smart Cities. 2018</td>
-                    <td><a href="https://www.plantemoran.com/explore-our-thinking/insight/2018/04/thinking-about-becoming-a-smart-city-10-benefits-of-smart-cities?utm_source=chatgpt.com" class="custom-btn">View Details</a></td>
+                    <td><b>Plant Moran.</b> 10 Benefits of Smart Cities. 2018</td>
+                    <td><a href="https://www.plantemoran.com/explore-our-thinking/insight/2018/04/thinking-about-becoming-a-smart-city-10-benefits-of-smart-cities?utm_source=chatgpt.com"
+                            class="custom-btn">View Details</a></td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>Cisco. What is a Smart City? 2023</td>
-                    <td><a href="https://www.cisco.com/site/us/en/learn/topics/networking/what-is-a-smart-city.html?utm_source=chatgpt.com" class="custom-btn">View Details</a></td>
+                    <td><b>Cisco.</b> What is a Smart City? 2023</td>
+                    <td><a href="https://www.cisco.com/site/us/en/learn/topics/networking/what-is-a-smart-city.html?utm_source=chatgpt.com"
+                            class="custom-btn">View Details</a></td>
                 </tr>
             </tbody>
         </table>
