@@ -1,6 +1,6 @@
 <!-- Introduction Section -->
 <div id="intro" class="section active">
-    <h1 style="text-align:center; font-weight:bold; ">Smart City Introduction</h1>
+    <h1>Smart City Introduction</h1>
     <h3>Definition of Smart City</h3>
     <p>A Smart City is an urban area that leverages digital technologies, data analytics, and interconnected systems to
         improve the quality of life for residents, optimize city operations, and promote sustainable development. It
@@ -46,15 +46,14 @@
         traffic, utilities, and public safety, providing adaptive solutions to urban challenges. By fostering
         sustainable growth, efficiency, and inclusivity, smart cities aim to improve both the livability and resilience
         of urban environments (Cisco, 2023).</p>
-    <h1 style="text-align:center; font-weight:bold; ">Video About Smart City</h1>
-    <div style="text-align:center; margin: 1.5rem 0;">
-        <div style="position:relative; width:100%; padding-bottom:56.25%; max-width:900px; margin:0 auto; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.10); overflow:hidden;">
+    <h2>Video About Smart City</h2>
+    <div style="text-align:center;">
+        <div class="video-container">
             <iframe src="https://www.youtube.com/embed/U8cCbWwx3s4"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:16px;">
+                allowfullscreen>
             </iframe>
         </div>
     </div>
@@ -126,7 +125,7 @@
         }
     </style>
     <!-- See More Table -->
-    <h1 style="text-align:center; font-weight:bold;">More About Smart City</h1>
+    <h2>More About Smart City</h2>
     <div class="mt-4">
         <table class="custom-table">
             <thead>

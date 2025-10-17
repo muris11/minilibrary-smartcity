@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('images/lg.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/modern.css') }}">
     <!-- Custom CSS should be loaded after Bootstrap for override -->
     <style>
         * {
@@ -569,7 +571,8 @@
                 <button class="nav-btn" onclick="showSection('pillars')" type="button">6 Pillars</button>
                 <button class="nav-btn" onclick="showSection('technologies')" type="button">Technology</button>
                 <button class="nav-btn" onclick="showSection('challenges')" type="button">Lampung City</button>
-                                <button class="nav-btn" onclick="showSection('benefits')" type="button">Benefits</button>
+                <button class="nav-btn" onclick="showSection('benefits')" type="button">Benefits</button>
+                <button class="nav-btn" onclick="showSection('team')" type="button">Our Team</button>
                 <button class="nav-btn" onclick="showSection('quiz')" type="button">Quiz</button>
             </div>
             <!-- Mobile Header with Hamburger -->

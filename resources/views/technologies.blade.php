@@ -1,53 +1,4 @@
 <!-- Supporting Technologies -->
-<style>
-    .tech-container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 1.5rem 1rem;
-    }
-
-    .tech-container h1 {
-        font-size: 2.2rem;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 1.2rem;
-        color: #1565c0;
-    }
-
-    .tech-container p {
-        font-size: 1.05rem;
-        color: #333;
-        margin-bottom: 1.2rem;
-    }
-
-    .custom-table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0;
-        margin-top: 1rem;
-        font-size: 1rem;
-        background: #fff;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-        border-radius: 16px;
-        overflow: hidden;
-    }
-
-    .custom-table th,
-    .custom-table td {
-        border: none;
-        padding: 14px 20px;
-        text-align: left;
-    }
-
-    .custom-table th {
-        background: linear-gradient(90deg, #e3f2fd 0%, #f5f7fa 100%);
-        color: #1976d2;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-    }
-
-    .custom-table tbody tr {
-        transition: background 0.2s;
     }
 
     .custom-table tbody tr:hover {
@@ -99,11 +50,7 @@
 </style>
 
 <div id="technologies" class="section">
-    <div class="tech-container">
-
-        <h1>Supporting Technologies for Smart City</h1>
-
-        <div style="text-align:center; margin: 1.5rem 0;">
+    <h1>Supporting Technologies for Smart City</h1>        <div style="text-align:center; margin: 1.5rem 0;">
             <img src="{{ asset('images/tech.png') }}" alt="Smart City"
                  style="max-width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.10);">
         </div>
@@ -159,7 +106,7 @@
             cleaner—especially in dense or visitor-heavy areas.
         </p>
 
-        <h1 style="text-align:center; font-weight:bold;">More About Smart City Technologies</h1>
+        <h2>More About Smart City Technologies</h2>
         <div class="mt-4">
             <table class="custom-table">
                 <thead>
@@ -183,6 +130,4 @@
                 </tbody>
             </table>
         </div>
-
-    </div>
 </div>

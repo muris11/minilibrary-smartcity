@@ -14,6 +14,8 @@
             @include('benefits')
             <!-- Challenges -->
             @include('challenges')
+            <!-- Team -->
+            @include('team')
             <!-- Quiz -->
             @include('quiz')
 

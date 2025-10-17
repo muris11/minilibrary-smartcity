@@ -1,84 +1,6 @@
 <!-- 6 Smart City Pillars -->
-<style>
-    .pillars-container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 1.5rem 1rem;
-    }
-
-    .pillars-container h1 {
-        font-size: 2.2rem;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 1.2rem;
-        color: #1565c0;
-    }
-
-    .pillars-container h3 {
-        font-size: 1.35rem;
-        color: #1976d2;
-        margin-top: 2.2rem;
-        margin-bottom: 0.7rem;
-        font-weight: 600;
-    }
-
-    .pillars-container img {
-        display: block;
-        margin: 0 auto 1rem auto;
-        width: 100%;
-        max-width: 400px;
-        border-radius: 14px;
-        box-shadow: 0 4px 18px rgba(21, 101, 192, 0.08);
-        object-fit: cover;
-    }
-
-    .pillars-container ul {
-        margin-bottom: 1.2rem;
-        padding-left: 1.2rem;
-    }
-
-    .pillars-container ul li {
-        margin-bottom: 0.5rem;
-        font-size: 1.02rem;
-        color: #444;
-    }
-
-    .pillars-container p {
-        font-size: 1.05rem;
-        color: #333;
-        margin-bottom: 1rem;
-    }
-
-    @media (max-width: 600px) {
-        .pillars-container {
-            padding: 1rem 0.3rem;
-        }
-
-        .pillars-container h1 {
-            font-size: 1.3rem;
-        }
-
-        .pillars-container h3 {
-            font-size: 1.05rem;
-        }
-
-        .pillars-container img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .pillars-container ul li {
-            font-size: 0.97rem;
-        }
-
-        .pillars-container p {
-            font-size: 0.98rem;
-        }
-    }
-</style>
 <div id="pillars" class="section">
-    <div class="pillars-container">
-        <h1 style="text-align:center; font-weight:bold;">Six Pillars of Smart City</h1>
+    <h1>Six Pillars of Smart City</h1>
         <p>A Smart City framework typically comprises six interconnected pillars: Smart Economy, Smart People, Smart
             Governance, Smart Mobility, Smart Environment, and Smart Living. Each pillar represents a domain of urban
             development where digital technologies and innovative practices are applied to improve efficiency,
@@ -89,8 +11,10 @@
             initiatives.</p>
 
         <h3>Smart Economy</h3>
-        <img src="{{ asset('images/eco.png') }}" alt="Smart Economy"
-            style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
+        <div style="text-align:center; margin: 1.5rem 0;">
+            <img src="{{ asset('images/eco.png') }}" alt="Smart Economy" 
+                 style="max-width: 400px; width: 100%;">
+        </div>
         <p>This pillar focuses on economic vitality through innovation and competitiveness. A Smart Economy uses
             information
             and communication technologies (ICT) to strengthen local businesses, attract investment and talent, and
