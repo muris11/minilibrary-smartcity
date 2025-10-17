@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="content">
-            
+
             <!-- Introduction -->
             @include('intro')
             <!-- Pillars -->

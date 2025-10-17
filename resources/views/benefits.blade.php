@@ -1,27 +1,7 @@
 <!-- Smart City Benefits -->
-        .benefits-container {
-            padding: 1rem 0.3rem;
-        }
-
-        .benefits-container h1 {
-            font-size: 1.3rem;
-        }
-
-        .custom-table th,
-        .custom-table td {
-            padding: 10px 8px;
-            font-size: 0.97rem;
-        }
-
-        .benefits-container p {
-            font-size: 0.98rem;
-        }
-    }
-</style>
 
 <div id="benefits" class="section">
-    <div class="benefits-container">
-        <h1>Benefits Of a Smart City in Lampung</h1>
+    <h1>Benefits Of a Smart City in Lampung</h1>
 
         <div style="text-align:center; margin: 1.5rem 0;">
             <img src="{{ asset('images/ben.png') }}" alt="Smart City"
@@ -109,5 +89,4 @@
                 </tbody>
             </table>
         </div>
-    </div>
 </div>

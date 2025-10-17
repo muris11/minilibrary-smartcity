@@ -49,81 +49,13 @@
     <h2>Video About Smart City</h2>
     <div style="text-align:center;">
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/U8cCbWwx3s4"
-                title="YouTube video player"
-                frameborder="0"
+            <iframe src="https://www.youtube.com/embed/U8cCbWwx3s4" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
             </iframe>
         </div>
     </div>
-    <!-- Custom Table Styles -->
-    <style>
-        h1 {
-            font-size: 2.2rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 1.2rem;
-            color: #1565c0;
-        }
 
-        .custom-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            margin-top: 1rem;
-            font-size: 1rem;
-            background: #fff;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-            border-radius: 16px;
-            overflow: hidden;
-        }
-
-        .custom-table th,
-        .custom-table td {
-            border: none;
-            padding: 14px 20px;
-            text-align: left;
-        }
-
-        .custom-table th {
-            background: linear-gradient(90deg, #e3f2fd 0%, #f5f7fa 100%);
-            color: #1976d2;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        .custom-table tbody tr {
-            transition: background 0.2s;
-        }
-
-        .custom-table tbody tr:hover {
-            background: #e3f2fd;
-        }
-
-        .custom-table td {
-            color: #444;
-        }
-
-        .custom-table td .custom-btn {
-            display: inline-block;
-            padding: 7px 22px;
-            background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
-            color: #fff;
-            border: none;
-            border-radius: 24px;
-            font-size: 1rem;
-            font-weight: 500;
-            text-decoration: none;
-            box-shadow: 0 1px 4px rgba(25, 118, 210, 0.12);
-            transition: background 0.2s, box-shadow 0.2s;
-        }
-
-        .custom-table td .custom-btn:hover {
-            background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
-            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.18);
-        }
-    </style>
     <!-- See More Table -->
     <h2>More About Smart City</h2>
     <div class="mt-4">
