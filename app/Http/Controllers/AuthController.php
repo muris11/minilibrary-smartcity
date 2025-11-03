@@ -19,6 +19,10 @@ class AuthController extends Controller
     {
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
+            $user = Auth::user();
+            if ($user && $user->role === 'admin') {
+                return redirect('/admin');
+            }
             return redirect('/');
         }
         return back()->withErrors(['email' => 'Email atau password salah']);

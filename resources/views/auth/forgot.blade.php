@@ -177,7 +177,7 @@
     <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
         <div class="card smartcity-card">
             <div class="smartcity-header">
-                <h1>🏙️ Smart City Library</h1>
+                <h1>Smart City Library</h1>
                 <div class="subtitle">Interactive Learning Platform</div>
             </div>
             <div class="login-title">Change Password</div>

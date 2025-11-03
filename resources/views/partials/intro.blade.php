@@ -1,0 +1,143 @@
+    <!-- Introduction Section -->
+    <div id="intro" class="section active">
+        <div class="card">
+            <h1>Smart City Introduction</h1>
+            <h3>Definition of Smart City</h3>
+            <p>A Smart City is an urban area that leverages digital technologies, data analytics, and interconnected
+                systems
+                to
+                improve the quality of life for residents, optimize city operations, and promote sustainable
+                development. It
+                integrates information and communication technologies (ICT), Internet of Things (IoT), big data, and
+                artificial
+                intelligence (AI) to enhance urban infrastructure, including transportation networks, water and energy
+                management, waste disposal, and public safety. Smart cities also provide more interactive and responsive
+                governance, allowing citizens to report issues, access services digitally, and participate in urban
+                planning,
+                while making public spaces safer and more inclusive (European Commission, 2023; IBM, 2023).</p>
+
+            <div class="modern-image-container">
+                <img src="{{ asset('images/bg1.png') }}" alt="Smart City" class="modern-image">
+            </div>
+
+            <p>Smart cities leverage technology to improve the overall standard of living. Examples include Singapore's
+                Smart
+                Nation initiative, Barcelona's smart
+                lighting and waste management systems, and Jakarta's "Jakarta Kini (JAKI)" platform, which enhances
+                citizen
+                engagement and public service delivery. Smart cities not only support sustainable urban growth but also
+                encourage economic innovation, better resource management, and adaptive solutions for challenges such as
+                traffic
+                congestion, pollution, and an aging population (TechTarget, 2023; Plant Moran, 2018; Cisco, 2023).</p>
+
+            <p>A Smart City is an urban area that utilizes digital technologies, data analytics, and interconnected
+                systems
+                to
+                enhance the quality of life for its residents, improve operational efficiency, and promote sustainable
+                development. It integrates information and communication technologies (ICT) into city management to
+                optimize
+                transportation, energy, water supply, and waste management while providing citizens with platforms to
+                engage
+                in
+                governance and access public services efficiently (European Commission, 2023).</p>
+
+            <div class="modern-image-container">
+                <img src="{{ asset('images/bg2.png') }}" alt="Smart City Infrastructure" class="modern-image">
+            </div>
+
+            <p>In a smart city, IoT devices, sensors, and real-time data analytics are widely used to monitor and manage
+                infrastructure. These technologies enable city administrators to make proactive decisions, reduce
+                congestion,
+                lower energy consumption, and improve overall urban livability. Residents experience safer, cleaner, and
+                more
+                convenient urban environments due to these intelligent systems (IBM, 2023).</p>
+
+            <p>Smart cities also emphasize citizen engagement and economic innovation. Digital platforms allow residents
+                to
+                report issues, participate in urban planning, and interact with local authorities, while businesses
+                benefit
+                from
+                better connectivity, logistics efficiency, and opportunities for technological development. The
+                integration
+                of
+                AI, big data, and cloud computing enables cities to be adaptive, resilient, and responsive to emerging
+                challenges (TechTarget, 2023).</p>
+
+            <p>The benefits of smart cities extend to environmental sustainability and social welfare. By improving
+                energy
+                efficiency, monitoring pollution, and optimizing public services such as healthcare, transportation, and
+                administrative processes, smart cities reduce their ecological footprint while enhancing citizens' daily
+                lives.
+                Furthermore, they encourage public-private collaboration and attract innovative businesses, contributing
+                to
+                economic growth and technological advancement (Plant Moran, 2018).</p>
+
+            <p>Ultimately, smart cities create a connected urban ecosystem where infrastructure, residents, and services
+                interact intelligently. Advanced communication networks and integrated systems allow for real-time
+                monitoring of
+                traffic, utilities, and public safety, providing adaptive solutions to urban challenges. By fostering
+                sustainable growth, efficiency, and inclusivity, smart cities aim to improve both the livability and
+                resilience
+                of urban environments (Cisco, 2023).</p>
+        </div>
+
+        <div class="card">
+            <h2>Video About Smart City</h2>
+            <div class="video-container-wrapper">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/U8cCbWwx3s4" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- See More Table -->
+        <div class="card">
+            <h2>More About Smart City</h2>
+            <div class="modern-table-container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th style="width:5%;">No</th>
+                            <th style="width:65%;"><b>Title & Source</b></th>
+                            <th style="width:30%;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><b>European Commission.</b> Smart Cities: City Initiatives. 2023</td>
+                            <td><a href="https://commission.europa.eu/eu-regional-and-urban-development/topics/cities-and-urban-development/city-initiatives/smart-cities_en?utm_source=chatgpt.com"
+                                    class="custom-btn">View Details <i class="material-icons">arrow_forward</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><b>IBM.</b> What is a Smart City? 2023.</td>
+                            <td><a href="https://www.ibm.com/think/topics/smart-city?utm_source=chatgpt.com"
+                                    class="custom-btn">View Details <i class="material-icons">arrow_forward</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><b>TechTarget.</b> Smart City Definition. 2023</td>
+                            <td><a href="https://www.techtarget.com/iotagenda/definition/smart-city?utm_source=chatgpt.com"
+                                    class="custom-btn">View Details <i class="material-icons">arrow_forward</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><b>Plant Moran.</b> Smart Cities: The Future of Urban Development. 2018</td>
+                            <td><a href="https://www.plantmoran.com/explore-our-thinking/insight/2018/05/smart-cities-the-future-of-urban-development?utm_source=chatgpt.com"
+                                    class="custom-btn">View Details <i class="material-icons">arrow_forward</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><b>Cisco.</b> Smart Cities: Improving Lives Through Technology. 2023</td>
+                            <td><a href="https://www.cisco.com/c/en/us/solutions/industries/smart-cities.html?utm_source=chatgpt.com"
+                                    class="custom-btn">View Details <i class="material-icons">arrow_forward</i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

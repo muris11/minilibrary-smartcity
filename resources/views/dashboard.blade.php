@@ -1,25 +1,28 @@
 @extends('layout.app')
 
+@php
+    use Illuminate\Support\Facades\Blade;
+@endphp
+
 @section('content')
     <div class="container">
         <div class="content">
+            @php
+                $partials = \App\Models\Partial::where('active', true)->orderBy('id')->get();
+            @endphp
 
-            <!-- Introduction -->
-            @include('intro')
-            <!-- Pillars -->
-            @include('pillars')
-            <!-- Technologies -->
-            @include('technologies')
-            <!-- Benefits -->
-            @include('benefits')
-            <!-- Challenges -->
-            @include('challenges')
-            <!-- Team -->
-            @include('team')
-            <!-- Quiz -->
-            @include('quiz')
-
+            @foreach ($partials as $partial)
+                @php
+                    echo Blade::render($partial->content);
+                @endphp
+            @endforeach
         </div>
     </div>
-    </div>
+
+    <script>
+        // Initialize with intro section active
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('intro');
+        });
+    </script>
 @endsection
