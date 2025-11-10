@@ -1,48 +1,93 @@
 <!-- Smart City Quiz -->
-<div id="quiz" class="section">
-    <div class="content-card">
-        <div class="card-header">
-            <h1>Smart City Quiz</h1>
-            <p class="card-subtitle">Test your knowledge about Smart City concepts and innovations. Answer all questions to earn your certificate!</p>
-        </div>
-    </div>
-
-    <div class="content-card">
-        <div class="quiz-progress-container">
-            <div class="quiz-progress__text" id="quiz-progress-text">0/10 answered</div>
-            <div class="quiz-progress" aria-hidden="true">
-                <div class="quiz-progress__bar" id="quiz-progress-bar"></div>
+<div id="quiz" class="section px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">Smart City Quiz</h1>
+                <p class="text-gray-600 text-sm md:text-base">Test your knowledge about Smart City concepts and
+                    innovations. Answer all questions to earn your certificate!</p>
             </div>
         </div>
-    </div>
 
-    <div class="content-card">
-        <form id="quiz-form">
-            <div class="quiz-question">
-                <label>1. What best describes the study's research design in comparing Lyon and Bandar Lampung?</label>
-                <div class="quiz-options">
-                    <input type="radio" name="q1" value="a" id="q1a">
-                    <label for="q1a">Randomized controlled trial across multiple cities</label>
-                    <input type="radio" name="q1" value="b" id="q1b">
-                    <label for="q1b">Qualitative comparative case study of two cities</label>
-                    <input type="radio" name="q1" value="c" id="q1c">
-                    <label for="q1c">Cross-sectional econometric analysis using panel data</label>
-                    <input type="radio" name="q1" value="d" id="q1d">
-                    <label for="q1d">Laboratory experiment on simulated urban networks</label>
+        <div class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-6">
+            <div class="quiz-progress-container">
+                <div class="quiz-progress__text text-sm md:text-base font-semibold" id="quiz-progress-text">0/10 answered
+                </div>
+                <div class="quiz-progress flex-1 ml-4" aria-hidden="true">
+                    <div class="quiz-progress__bar h-3 bg-gradient-to-r from-orange-400 to-red-500 rounded-full transition-all duration-500"
+                        id="quiz-progress-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <form id="quiz-form" class="space-y-6">
+            <div
+                class="quiz-question bg-white rounded-lg shadow-md p-4 md:p-6 border-l-4 border-blue-500 hover:shadow-lg transition-shadow duration-300">
+                <label class="block text-base md:text-lg font-semibold text-gray-800 mb-4">1. What best describes the
+                    study's research design in comparing Lyon and Bandar Lampung?</label>
+                <div class="quiz-options space-y-3">
+                    <label
+                        class="flex items-center p-3 rounded-lg hover:bg-blue-50 cursor-pointer transition-colors duration-200">
+                        <input type="radio" name="q1" value="a" id="q1a"
+                            class="mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm md:text-base text-gray-700">Randomized controlled trial across multiple
+                            cities</span>
+                    </label>
+                    <label
+                        class="flex items-center p-3 rounded-lg hover:bg-blue-50 cursor-pointer transition-colors duration-200">
+                        <input type="radio" name="q1" value="b" id="q1b"
+                            class="mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm md:text-base text-gray-700">Qualitative comparative case study of two
+                            cities</span>
+                    </label>
+                    <label
+                        class="flex items-center p-3 rounded-lg hover:bg-blue-50 cursor-pointer transition-colors duration-200">
+                        <input type="radio" name="q1" value="c" id="q1c"
+                            class="mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm md:text-base text-gray-700">Cross-sectional econometric analysis using
+                            panel data</span>
+                    </label>
+                    <label
+                        class="flex items-center p-3 rounded-lg hover:bg-blue-50 cursor-pointer transition-colors duration-200">
+                        <input type="radio" name="q1" value="d" id="q1d"
+                            class="mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm md:text-base text-gray-700">Laboratory experiment on simulated urban
+                            networks</span>
+                    </label>
                 </div>
             </div>
 
-            <div class="quiz-question">
-                <label>2. Which primary instruments were used to collect data for the environment-related indicators?</label>
-                <div class="quiz-options">
-                    <input type="radio" name="q2" value="a" id="q2a">
-                    <label for="q2a">Interviews with officials and a five-point Likert survey</label>
-                    <input type="radio" name="q2" value="b" id="q2b">
-                    <label for="q2b">Satellite imagery and mobile phone CDRs only</label>
-                    <input type="radio" name="q2" value="c" id="q2c">
-                    <label for="q2c">Randomized citizen trials with IoT kits</label>
-                    <input type="radio" name="q2" value="d" id="q2d">
-                    <label for="q2d">Fiscal audits of municipal procurement</label>
+            <div
+                class="quiz-question bg-white rounded-lg shadow-md p-4 md:p-6 border-l-4 border-blue-500 hover:shadow-lg transition-shadow duration-300">
+                <label class="block text-base md:text-lg font-semibold text-gray-800 mb-4">2. Which primary instruments
+                    were used to collect data for the environment-related indicators?</label>
+                <div class="quiz-options space-y-3">
+                    <label
+                        class="flex items-center p-3 rounded-lg hover:bg-blue-50 cursor-pointer transition-colors duration-200">
+                        <input type="radio" name="q2" value="a" id="q2a"
+                            class="mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm md:text-base text-gray-700">Interviews with officials and a five-point
+                            Likert survey</span>
+                    </label>
+                    <label
+                        class="flex items-center p-3 rounded-lg hover:bg-blue-50 cursor-pointer transition-colors duration-200">
+                        <input type="radio" name="q2" value="b" id="q2b"
+                            class="mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm md:text-base text-gray-700">Satellite imagery and mobile phone CDRs
+                            only</span>
+                    </label>
+                    <label
+                        class="flex items-center p-3 rounded-lg hover:bg-blue-50 cursor-pointer transition-colors duration-200">
+                        <input type="radio" name="q2" value="c" id="q2c"
+                            class="mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm md:text-base text-gray-700">Randomized citizen trials with IoT kits</span>
+                    </label>
+                    <label
+                        class="flex items-center p-3 rounded-lg hover:bg-blue-50 cursor-pointer transition-colors duration-200">
+                        <input type="radio" name="q2" value="d" id="q2d"
+                            class="mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm md:text-base text-gray-700">Fiscal audits of municipal procurement</span>
+                    </label>
                 </div>
             </div>
 
@@ -52,7 +97,8 @@
                     <input type="radio" name="q3" value="a" id="q3a">
                     <label for="q3a">Smart Economy (innovation & jobs)</label>
                     <input type="radio" name="q3" value="b" id="q3b">
-                    <label for="q3b">Environment-related domain (e.g., buildings, housing, pollution, water, waste)</label>
+                    <label for="q3b">Environment-related domain (e.g., buildings, housing, pollution, water,
+                        waste)</label>
                     <input type="radio" name="q3" value="c" id="q3c">
                     <label for="q3c">Smart Governance (e-government & open data)</label>
                     <input type="radio" name="q3" value="d" id="q3d">
@@ -92,7 +138,8 @@
                 <label>6. What gap is highlighted for the building domain in Bandar Lampung?</label>
                 <div class="quiz-options">
                     <input type="radio" name="q6" value="a" id="q6a">
-                    <label for="q6a">Too much adoption of zero-energy building concepts throughout the city</label>
+                    <label for="q6a">Too much adoption of zero-energy building concepts throughout the
+                        city</label>
                     <input type="radio" name="q6" value="b" id="q6b">
                     <label for="q6b">Limited mainstream adoption of zero-energy building (ZEB) concepts</label>
                     <input type="radio" name="q6" value="c" id="q6c">
@@ -117,7 +164,8 @@
             </div>
 
             <div class="quiz-question">
-                <label>8. What challenge in pollution control does the study suggest to strengthen in Bandar Lampung?</label>
+                <label>8. What challenge in pollution control does the study suggest to strengthen in Bandar
+                    Lampung?</label>
                 <div class="quiz-options">
                     <input type="radio" name="q8" value="a" id="q8a">
                     <label for="q8a">Community data operations and management for air quality</label>
@@ -150,7 +198,8 @@
                     <input type="radio" name="q10" value="a" id="q10a">
                     <label for="q10a">The city is already fully developed and needs no further investment</label>
                     <input type="radio" name="q10" value="b" id="q10b">
-                    <label for="q10b">The city shows potential but needs strategic investments in IoT and capacity building</label>
+                    <label for="q10b">The city shows potential but needs strategic investments in IoT and capacity
+                        building</label>
                     <input type="radio" name="q10" value="c" id="q10c">
                     <label for="q10c">The city should abandon smart city initiatives entirely</label>
                     <input type="radio" name="q10" value="d" id="q10d">
@@ -158,17 +207,24 @@
                 </div>
             </div>
 
-            <div class="quiz-actions">
-                <div class="quiz-actions-flex">
-                    <button type="button" class="quiz-btn" id="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
-                    <button type="button" class="quiz-btn secondary" onclick="resetQuiz()">Reset Quiz</button>
-                    <button type="button" class="quiz-btn secondary" id="download-certificate-btn" onclick="downloadCertificate()" disabled>Download Certificate</button>
+            <div class="quiz-actions bg-white rounded-lg shadow-lg p-6 mt-8">
+                <div class="quiz-actions-flex flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button type="button"
+                        class="quiz-btn bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                        id="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+                    <button type="button"
+                        class="quiz-btn secondary bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                        onclick="resetQuiz()">Reset Quiz</button>
+                    <button type="button"
+                        class="quiz-btn secondary bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                        id="download-certificate-btn" onclick="downloadCertificate()" disabled>Download
+                        Certificate</button>
                 </div>
             </div>
         </form>
     </div>
 
-    <div id="quiz-result" class="content-card"></div>
+    <div id="quiz-result" class="mt-8"></div>
 </div>
 
 <script>
@@ -266,7 +322,9 @@
     }
 
     function downloadCertificate() {
-        const { jsPDF } = window.jspdf;
+        const {
+            jsPDF
+        } = window.jspdf;
         const doc = new jsPDF();
 
         // Certificate styling
@@ -282,23 +340,31 @@
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(24);
         doc.setTextColor(25, 118, 210);
-        doc.text('SMART CITY CERTIFICATE', 105, 40, { align: 'center' });
+        doc.text('SMART CITY CERTIFICATE', 105, 40, {
+            align: 'center'
+        });
 
         // Subtitle
         doc.setFontSize(16);
         doc.setTextColor(100, 100, 100);
-        doc.text('Certificate of Completion', 105, 55, { align: 'center' });
+        doc.text('Certificate of Completion', 105, 55, {
+            align: 'center'
+        });
 
         // Main text
         doc.setFontSize(14);
         doc.setTextColor(50, 50, 50);
-        doc.text('This is to certify that', 105, 80, { align: 'center' });
+        doc.text('This is to certify that', 105, 80, {
+            align: 'center'
+        });
 
         // Name (placeholder)
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(18);
         doc.setTextColor(25, 118, 210);
-        doc.text('Participant', 105, 95, { align: 'center' });
+        doc.text('Participant', 105, 95, {
+            align: 'center'
+        });
 
         // Completion text
         doc.setFont('helvetica', 'normal');
@@ -306,25 +372,33 @@
         doc.setTextColor(50, 50, 50);
         const completionText = 'has successfully completed the Smart City Knowledge Assessment';
         const splitText = doc.splitTextToSize(completionText, 150);
-        doc.text(splitText, 105, 110, { align: 'center' });
+        doc.text(splitText, 105, 110, {
+            align: 'center'
+        });
 
         // Score
         const score = localStorage.getItem('quizScore') || 'Score: 10/10';
         doc.setFontSize(14);
         doc.setTextColor(25, 118, 210);
-        doc.text(score, 105, 130, { align: 'center' });
+        doc.text(score, 105, 130, {
+            align: 'center'
+        });
 
         // Date
         const today = new Date();
         const dateStr = today.toLocaleDateString();
         doc.setFontSize(12);
         doc.setTextColor(100, 100, 100);
-        doc.text('Date: ' + dateStr, 105, 150, { align: 'center' });
+        doc.text('Date: ' + dateStr, 105, 150, {
+            align: 'center'
+        });
 
         // Footer
         doc.setFontSize(10);
         doc.setTextColor(150, 150, 150);
-        doc.text('Mini Library Smart City - Lampung Province', 105, 270, { align: 'center' });
+        doc.text('Mini Library Smart City - Lampung Province', 105, 270, {
+            align: 'center'
+        });
 
         // Download
         doc.save('Smart_City_Certificate.pdf');
@@ -374,4 +448,5 @@
         }
     });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
