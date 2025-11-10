@@ -193,7 +193,7 @@
 
     function submitQuiz() {
         if (!allAnswered()) {
-            alert('Silakan jawab semua pertanyaan sebelum mengirimkan kuis.');
+            alert('Please answer all questions before submitting the quiz.');
             return;
         }
 

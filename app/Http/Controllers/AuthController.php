@@ -25,7 +25,7 @@ class AuthController extends Controller
             }
             return redirect('/');
         }
-        return back()->withErrors(['email' => 'Email atau password salah']);
+        return back()->withErrors(['email' => 'Invalid email or password']);
     }
 
     public function showRegisterForm()
@@ -47,7 +47,7 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ]);
-    return redirect('/login')->with('success', 'Registrasi berhasil, silakan login.');
+    return redirect('/login')->with('success', 'Registration successful, please login.');
     }
 
     public function logout(Request $request)
@@ -71,6 +71,6 @@ class AuthController extends Controller
         $user = User::where('email', $request->email)->first();
         $user->password = Hash::make($request->password);
         $user->save();
-        return redirect('/login')->with('success', 'Password berhasil diubah, silakan login.');
+        return redirect('/login')->with('success', 'Password changed successfully, please login.');
     }
 }

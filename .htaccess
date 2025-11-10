@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect root to public/
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Handle public folder
+<Directory "public">
+    AllowOverride All
+    Require all granted
+</Directory>
