@@ -1,118 +1,85 @@
 <!-- Team Members Section -->
 <div id="team" class="section">
-    <div class="card">
-        <h1>Our Team</h1>
-        <p style="text-align: center; font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 2rem;">
-            Meet our dedicated team of experts working on Smart City innovations and research.
-        </p>
-    </div>
+    <div class="content-card">
+        <div class="card-header">
+            <h1>Our Teammm</h1>
+            <p class="card-subtitle">Meet our dedicated team of experts working on Smart City innovations and research
+            </p>
+        </div>
 
-    <div class="team-grid">
-        <div class="team-card modern-card">
-            <div class="team-content">
+        <div class="team-stats-grid">
+            <div class="stat-card">
                 <div class="stat-icon">
                     <i class="bi bi-people-fill"></i>
                 </div>
-                <h3>{{ \App\Models\TeamMember::active()->count() }}</h3>
-                <p class="role">Team Members</p>
-                <p class="description">
-                    Our dedicated team of experts working on Smart City innovations and research.
-                </p>
-                <div class="skills">
-                    <span class="skill-tag">Smart City</span>
-                    <span class="skill-tag">Innovation</span>
-                    <span class="skill-tag">Technology</span>
+                <div class="stat-content">
+                    <h3>{{ \App\Models\TeamMember::active()->count() }}</h3>
+                    <p>Team Members</p>
                 </div>
             </div>
-        </div>
-        <div class="team-card modern-card">
-            <div class="team-content">
+            <div class="stat-card">
                 <div class="stat-icon">
                     <i class="bi bi-clock-history"></i>
                 </div>
-                <h3>15+</h3>
-                <p class="role">Years Experience</p>
-                <p class="description">
-                    Combined experience in smart infrastructure development and IoT implementation.
-                </p>
-                <div class="skills">
-                    <span class="skill-tag">Urban Tech</span>
-                    <span class="skill-tag">Innovation</span>
-                    <span class="skill-tag">Sustainability</span>
+                <div class="stat-content">
+                    <h3>15+</h3>
+                    <p>Years Experience</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="team-grid">
-            @php
-                $teamMembers = \App\Models\TeamMember::active()->ordered()->get();
-                // Debug: tampilkan data untuk memastikan query bekerja
-                // echo '<pre style="background:#f8f9fa;padding:10px;margin:10px;border:1px solid #dee2e6;">' . json_encode($teamMembers->toArray(), JSON_PRETTY_PRINT) . '</pre>';
-            @endphp
+    <div class="content-card">
+        <div class="card-header">
+            <h2>Team Members</h2>
+        </div>
 
-            @forelse($teamMembers as $member)
-                <!-- Team Member {{ $member->id }} -->
-                <div class="team-card">
-                    <div class="team-image">
-                        @if ($member->image)
-                            <img src="{{ asset($member->image) }}" alt="{{ $member->name }}">
-                        @else
-                            <div class="no-image-placeholder">
-                                <i class="bi bi-person-circle"></i>
-                            </div>
-                        @endif
-                    </div>
-                    <div class="team-content">
-                        <h3>{{ $member->name }}</h3>
-                        <p class="role">{{ $member->position ?? 'Team Member' }}</p>
-                        <p class="description">
-                            {{ $member->description ?? 'Dedicated professional contributing to smart city initiatives.' }}
-                        </p>
-                        <div class="skills">
-                            @if ($member->skills && count($member->skills) > 0)
-                                @foreach ($member->skills as $skill)
-                                    <span class="skill-tag">{{ $skill }}</span>
-                                @endforeach
+        @php
+            $teamMembers = \App\Models\TeamMember::active()->ordered()->get();
+        @endphp
+
+        @if ($teamMembers->count() > 0)
+            <div class="team-members-grid">
+                @foreach ($teamMembers as $member)
+                    <div class="member-card">
+                        <div class="member-image">
+                            @if ($member->image)
+                                <img src="{{ asset($member->image) }}" alt="{{ $member->name }}">
                             @else
-                                <span class="skill-tag">Smart City</span>
-                                <span class="skill-tag">Innovation</span>
-                                <span class="skill-tag">Technology</span>
+                                <div class="member-placeholder">
+                                    <i class="bi bi-person-circle"></i>
+                                </div>
                             @endif
                         </div>
+                        <div class="member-content">
+                            <h3>{{ $member->name }}</h3>
+                            <p class="member-position">{{ $member->position ?? 'Team Member' }}</p>
+                            <p class="member-description">
+                                {{ $member->description ?? 'Dedicated professional contributing to smart city initiatives.' }}
+                            </p>
+                            <div class="member-skills">
+                                @if ($member->skills && count($member->skills) > 0)
+                                    @foreach ($member->skills as $skill)
+                                        <span class="skill-tag">{{ $skill }}</span>
+                                    @endforeach
+                                @else
+                                    <span class="skill-tag">Smart City</span>
+                                    <span class="skill-tag">Innovation</span>
+                                    <span class="skill-tag">Technology</span>
+                                @endif
+                            </div>
+                        </div>
                     </div>
+                @endforeach
+            </div>
+        @else
+            <div class="empty-state">
+                <div class="empty-icon">
+                    <i class="bi bi-people"></i>
                 </div>
-            @empty
-                <div class="col-12">
-                    <div class="text-center py-5">
-                        <i class="bi bi-people" style="font-size: 3rem; color: var(--text-light);"></i>
-                        <p class="mt-3 text-muted">Team members will be displayed here once added by administrators.</p>
-                    </div>
-                </div>
-            @endforelse
-        </div>
+                <h3>No Team Members Yet</h3>
+                <p>Team members will be displayed here once added by administrators.</p>
+            </div>
+        @endif
     </div>
-</div>
-
-<div class="card">
-    <div class="contact-section">
-        <h2>Get In Touch</h2>
-        <p>Interested in collaborating with our team? We'd love to hear from you.</p>
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="bi bi-envelope"></i>
-                <span>team@smartcitylibrary.com</span>
-            </div>
-            <div class="contact-item">
-                <i class="bi bi-telephone"></i>
-                <span>+62 123 456 7890</span>
-            </div>
-            <div class="contact-item">
-                <i class="bi bi-geo-alt"></i>
-                <span>Lampung, Indonesia</span>
-            </div>
-        </div>
-    </div>
-</div>
 </div>

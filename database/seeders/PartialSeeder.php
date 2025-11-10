@@ -56,6 +56,12 @@ class PartialSeeder extends Seeder
                 'content' => file_get_contents(resource_path('views/partials/quiz.blade.php')),
                 'active' => true,
             ],
+            [
+                'name' => 'Get In Touch',
+                'slug' => 'contact',
+                'content' => file_get_contents(resource_path('views/partials/contact.blade.php')),
+                'active' => true,
+            ],
         ];
 
         foreach ($partials as $partial) {

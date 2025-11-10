@@ -1,162 +1,188 @@
-git config --global credential.helper managergit config --global credential.helper manager<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
--   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
--   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
--   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
--   [Robust background job processing](https://laravel.com/docs/queues).
--   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
--   **[Vehikl](https://vehikl.com)**
--   **[Tighten Co.](https://tighten.co)**
--   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
--   **[64 Robots](https://64robots.com)**
--   **[Curotec](https://www.curotec.com/services/technologies/laravel)**
--   **[DevSquad](https://devsquad.com/hire-laravel-developers)**
--   **[Redberry](https://redberry.international/laravel-development)**
--   **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
 # Mini Library Smart City
 
-A modern interactive web application for learning about Smart City concepts, technologies, and case studies. Features include quizzes, user authentication, and a responsive dashboard.
+## Deskripsi
 
-## Features
+Mini Library Smart City adalah aplikasi web berbasis Laravel yang dirancang untuk mengelola perpustakaan mini di lingkungan smart city. Aplikasi ini menyediakan fitur-fitur untuk manajemen pengguna, konten halaman, anggota tim, dan pengaturan profil, dengan antarmuka yang modern dan responsif menggunakan Tailwind CSS.
 
--   Interactive dashboard with Smart City content
--   Two English quizzes with score tracking and reset on logout
--   User authentication (login/register)
--   Responsive and modern UI with Bootstrap
--   Score persistence using localStorage
+## Fitur Utama
 
-## Installation Tutorial
+### 1. Autentikasi Pengguna
 
-### Prerequisites
+-   **Login**: Sistem login dengan validasi email dan password.
+-   **Registrasi**: Pendaftaran akun baru dengan validasi NIM, email, dan password.
+-   **Logout**: Keluar dari sistem dengan aman.
+-   **Role-Based Access**: Sistem peran pengguna (user dan admin) untuk kontrol akses.
+-   **Forgot Password**: Fitur reset password (perlu diperbaiki untuk keamanan).
 
--   PHP >= 8.0
--   Composer
--   Laravel (recommended version 9 or above)
--   MySQL or compatible database
--   Node.js & npm (for frontend assets)
+### 2. Dashboard Admin
 
-### Steps
+-   **Statistik Pengguna**: Menampilkan jumlah total pengguna, admin, dan user biasa.
+-   **Navigasi Cepat**: Akses langsung ke fitur manajemen utama.
+-   **Interface Responsif**: Dashboard yang dapat diakses dari berbagai perangkat.
 
-1. **Clone the repository**
+### 3. Manajemen Pengguna
 
-    ```sh
+-   **Daftar Pengguna**: Melihat semua pengguna dengan informasi lengkap.
+-   **Tambah Pengguna**: Form untuk membuat akun baru dengan role admin/user.
+-   **Edit Pengguna**: Mengubah informasi pengguna (nama, email, role).
+-   **Hapus Pengguna**: Menghapus akun pengguna (dengan konfirmasi).
+-   **Validasi Input**: Pastikan data unik dan aman.
+
+### 4. Manajemen Halaman
+
+-   **Daftar Halaman**: Melihat semua halaman yang dibuat.
+-   **Buat Halaman**: Editor untuk membuat konten halaman baru.
+-   **Edit Halaman**: Mengubah konten dan judul halaman.
+-   **Hapus Halaman**: Menghapus halaman yang tidak diperlukan.
+-   **Konten Dinamis**: Sistem untuk menampilkan halaman berdasarkan slug.
+
+### 5. Manajemen Partial
+
+-   **Daftar Partial**: Melihat komponen konten yang dapat digunakan ulang.
+-   **Buat Partial**: Membuat komponen baru dengan deskripsi.
+-   **Edit Partial**: Mengubah konten dan deskripsi partial.
+-   **Hapus Partial**: Menghapus partial yang tidak digunakan.
+-   **Penggunaan Ulang**: Partial dapat digunakan di berbagai halaman.
+
+### 6. Manajemen Anggota Tim
+
+-   **Daftar Anggota**: Melihat semua anggota tim dengan informasi lengkap.
+-   **Tambah Anggota**: Form untuk menambah anggota baru dengan keterampilan.
+-   **Edit Anggota**: Mengubah nama, deskripsi, dan keterampilan.
+-   **Hapus Anggota**: Menghapus anggota tim.
+-   **Keterampilan**: Sistem untuk menambah dan mengelola keterampilan anggota.
+
+### 7. Profil dan Pengaturan
+
+-   **Lihat Profil**: Menampilkan informasi akun pengguna.
+-   **Edit Profil**: Mengubah nama, email, dan informasi lainnya.
+-   **Pengaturan Akun**: Opsi untuk mengubah password dan preferensi.
+-   **Interface User-Friendly**: Form yang mudah digunakan dengan validasi.
+
+### 8. Antarmuka Pengguna Modern
+
+-   **Tailwind CSS**: Framework CSS untuk desain responsif dan modern.
+-   **Komponen UI**: Tombol, form, dan elemen UI yang konsisten.
+-   **Responsivitas**: Aplikasi dapat diakses dari desktop, tablet, dan mobile.
+-   **Navigasi Intuitif**: Menu dan breadcrumb untuk navigasi mudah.
+
+## Persyaratan Sistem
+
+-   **PHP**: ^8.2
+-   **Composer**: Untuk manajemen dependensi PHP
+-   **Node.js**: ^18.0 (untuk build assets)
+-   **npm**: Untuk manajemen dependensi JavaScript
+-   **Database**: SQLite (default), atau MySQL/PostgreSQL
+-   **Web Server**: Apache/Nginx dengan mod_rewrite
+
+## Instalasi
+
+1. **Clone Repository**:
+
+    ```bash
     git clone https://github.com/muris11/minilibrary-smartcity.git
     cd minilibrary-smartcity
     ```
 
-2. **Install PHP dependencies**
+2. **Install Dependensi PHP**:
 
-    ```sh
+    ```bash
     composer install
     ```
 
-3. **Copy and configure environment file**
+3. **Install Dependensi JavaScript**:
 
-    ```sh
-    cp .env.example .env
-    # Edit .env and set your database credentials
+    ```bash
+    npm install
     ```
 
-4. **Generate application key**
+4. **Konfigurasi Environment**:
 
-    ```sh
+    - Salin file `.env.example` ke `.env`:
+        ```bash
+        cp .env.example .env
+        ```
+    - Edit file `.env` dan sesuaikan pengaturan database, APP_KEY, dll.
+
+5. **Generate Application Key**:
+
+    ```bash
     php artisan key:generate
     ```
 
-5. **Run database migrations**
+6. **Jalankan Migrasi Database**:
 
-    ```sh
+    ```bash
     php artisan migrate
     ```
 
-6. **(Optional) Seed the database**
+7. **Jalankan Seeder (Opsional)**:
 
-    ```sh
+    ```bash
     php artisan db:seed
     ```
 
-7. **Install frontend dependencies and build assets**
-
-    ```sh
-    npm install
-    npm run dev
-    # Or for production
+8. **Build Assets**:
+    ```bash
     npm run build
     ```
 
-8. **Start the development server**
+## Penggunaan
 
-    ```sh
+1. **Jalankan Server Development**:
+
+    ```bash
     php artisan serve
-    # Or use your local server (e.g. Laragon)
     ```
 
-9. **Access the app**
-    - Open your browser and go to `http://localhost:8000` or your configured local domain.
+2. **Akses Aplikasi**:
 
-## Usage
+    - Buka browser dan kunjungi `http://localhost:8000`
 
--   Register a new account or login.
--   Explore Smart City content from the dashboard.
--   Take quizzes and view your score (score resets on logout).
+3. **Login sebagai Admin**:
 
-## Troubleshooting
+    - Gunakan akun admin yang dibuat melalui seeder atau buat manual.
 
--   If you see blank pages, check your `.env` database settings and run migrations.
--   For asset issues, run `npm run dev` or `npm run build`.
--   For authentication errors, clear browser cookies and try again.
+4. **Development Mode**:
+    - Untuk development frontend: `npm run dev`
+    - Untuk production build: `npm run build`
 
-## License
+## Struktur Proyek
 
-MIT
+-   `app/`: Kode aplikasi utama (Controllers, Models, Middleware)
+-   `resources/views/`: Template Blade
+-   `routes/web.php`: Definisi rute web
+-   `database/migrations/`: Migrasi database
+-   `public/`: File statis (CSS, JS, gambar)
+-   `config/`: Konfigurasi aplikasi
 
-## Author
+## Kontribusi
 
--   muris11
+1. Fork repository ini
+2. Buat branch fitur baru (`git checkout -b fitur-baru`)
+3. Commit perubahan (`git commit -am 'Tambah fitur baru'`)
+4. Push ke branch (`git push origin fitur-baru`)
+5. Buat Pull Request
+
+## Keamanan
+
+Aplikasi ini telah diperiksa untuk kerentanan umum, namun pastikan untuk:
+
+-   Selalu update dependensi secara berkala
+-   Gunakan HTTPS di production
+-   Jaga kerahasiaan file `.env`
+-   Implementasikan rate limiting untuk endpoint sensitif
+
+**Catatan**: Ada kerentanan pada fitur reset password yang perlu diperbaiki dengan menggunakan sistem reset password Laravel standar.
+
+## Lisensi
+
+Proyek ini menggunakan lisensi MIT. Lihat file `LICENSE` untuk detail lebih lanjut.
+
+## Dukungan
+
+Jika Anda mengalami masalah atau memiliki pertanyaan, silakan buat issue di repository GitHub ini.
+
+---
+
+Dikembangkan dengan ❤️ menggunakan Laravel Framework.
